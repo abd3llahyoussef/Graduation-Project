@@ -1,0 +1,110 @@
+/************ Custom Font ************/
+@font-face {
+  font-family: Centra;
+  src: url("./face/assets/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./face/assets/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Centra;
+  src: url("./face/assets/font/CentraNo2-Book.ttf");
+  font-weight: 400;
+}
+/************* body css ****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75vh;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-family: "Centra", sans-serif !important;
+}
+
+h3 {
+  padding-left: 1.2%;
+  line-height: normal;
+  margin-left: 45%;
+  margin-top: 2%;
+}
+
+p,
+button {
+  margin-top: 0.5rem;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+/*************** main css ******************/
+#video {
+  width: 50%;
+  height: 40%;
+  border-radius: 20%;
+  margin-left: 22%;
+  margin-top: 3%;
+}
+.photo-btn {
+  width: 50%;
+  margin-left: 36%;
+  margin-top: 3%;
+}
+.btn {
+  border: 0;
+  margin: 0.5rem;
+  background-color: transparent;
+  font-weight: 700;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+.btn span {
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 1.9rem;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  color: #121212;
+}
+.btn:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#canvas {
+  width: 30rem;
+  height: 17rem;
+}
+#pic {
+  padding-left: 30%;
+}
